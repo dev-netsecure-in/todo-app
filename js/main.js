@@ -91,3 +91,14 @@ function enterKey(){
 }  // end enterKey function
 
 enterKey();
+
+function clearList(){
+
+	var ul = document.getElementById("myUl");
+	ul.innerHTML = " ";
+	//alert(taskList.length);
+	taskList.splice(0,taskList.length);
+
+	alert(taskList.length);
+	
+}  //end of clearLIst
