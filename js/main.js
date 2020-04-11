@@ -11,7 +11,7 @@ function addItem(){
   //alert(task);
 
 
-//triming sting
+//triming white space in string
 	if (task.trim().length === 0 ){
 
 		return false;
