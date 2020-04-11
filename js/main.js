@@ -77,3 +77,17 @@ function removeMe(item){
 	alert(taskList);
 
 }// end removeMe
+
+
+function enterKey(){
+
+	var input = document.getElementById("todoInput");
+	input.onkeyup = function (key){
+
+		if (key.keyCode === 13){
+			addItem();
+		}
+	}
+}  // end enterKey function
+
+enterKey();
