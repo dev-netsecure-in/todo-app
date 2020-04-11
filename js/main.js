@@ -49,3 +49,31 @@ function addItem(){
 
 } //end of else
 } //end of function AddItem
+
+function reset (){
+
+document.getElementById("todoInput").value = "";
+
+} // end reset
+
+
+function checkMe(item){
+
+	var liTag = item.parentElement;
+	//alert (liTag);
+
+	liTag.style.textDecoration = (liTag.style.textDecoration === "line-through")? "none" : "line-through";
+
+//alert(item);
+} //end checkMe
+
+function removeMe(item){
+	var liTag = item.parentElement;
+	var ulTag =  liTag.parentElement;
+
+	ulTag.removeChild(liTag);
+
+	taskList.pop();
+	alert(taskList);
+
+}// end removeMe
